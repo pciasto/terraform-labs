@@ -11,6 +11,7 @@ variable "tags" {
 }
 
 variable "webapplocs" {
-    description = "Azure region List"
-    default = ["westus", "northeurope", "uksouth"]
- }
+    description = "List of locations for web apps"
+    type        = "list"
+    default     = []
+}
